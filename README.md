@@ -6,6 +6,12 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 ## Solution
 I have set up a solution which takes in an input image and outputs <b>bounding boxes</b> of regions of interest.
 
+## Tools and References Used
+* Tensorflow (Keras)
+* Matplotlib
+* [Yolov2 Pre Trained Model (DarkNet)](https://pjreddie.com/darknet/yolo/)
+* [OverFeat](https://arxiv.org/abs/1312.6229)
+
 ## Example (Input/Output)
 * <b>Input</b>
 [Input 1](https://github.com/monstahzxz/caMicroscope_demo/examples/input1.jpg)
