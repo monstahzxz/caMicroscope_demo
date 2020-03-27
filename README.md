@@ -10,7 +10,7 @@ I have set up a solution which takes in an input image and outputs <b>bounding b
 * Tensorflow (Keras)
 * Matplotlib
 * [Yolov2 Pre Trained Model (DarkNet)](https://pjreddie.com/darknet/yolo/)
-* [OverFeat](https://arxiv.org/abs/1312.6229)
+* [OverFeat Paper](https://arxiv.org/abs/1312.6229)
 
 ## Example (Input/Output)
 * <b>Input</b>
