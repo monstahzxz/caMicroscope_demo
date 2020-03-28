@@ -8,8 +8,8 @@ I have set up a solution which takes in an input image and outputs <b>bounding b
 
 ## Steps to Setup Locally
 1. Clone the repository
-2. Extract model_data.rar to directory model_data
-3. Place your image in images directory
+2. <b>Download</b> and extract [model_data.rar](https://drive.google.com/open?id=1mgt3wuqd4i21AbbAIVfyY1Il2IbAF61H) to directory model_data
+3. Place your image in input directory
 4. Run the following command to see results
 ``` sh
   py predict.py filename_in_images_directory
