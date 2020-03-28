@@ -20,3 +20,8 @@ I have set up a solution which takes in an input image and outputs <b>bounding b
 <img height="200" width="300" src="https://github.com/monstahzxz/caMicroscope_demo/blob/master/examples/input.jpeg"/>
 * <b>Output</b><br>
 <img height="200" width="300" src="https://github.com/monstahzxz/caMicroscope_demo/blob/master/examples/output.jpeg"/>
+
+## Video Example
+The model was run on a video to do real-time object detection. Please follow the links below to see the results.
+* [Input](https://drive.google.com/open?id=1JrLAiMroWTkXitvCLb26ZvKzgezGacTR)
+* [Output](https://drive.google.com/open?id=1-TTYYSvtZYYmcLEg7oGb-8pBsN7BiPXE)
