@@ -16,7 +16,7 @@ I have set up a solution which takes in an input image and outputs <b>bounding b
 * [OverFeat Paper](https://arxiv.org/abs/1312.6229)
 
 ## Example (Input/Output)
-* <b>Input</b>
-<video src="https://github.com/monstahzxz/caMicroscope_demo/examples/demo_input.mp4"/>
-* <b>Output</b>
-<video src="https://github.com/monstahzxz/caMicroscope_demo/examples/demo_output.avi"/>
+* <b>Input</b><br>
+<img src="https://github.com/monstahzxz/caMicroscope_demo/examples/input.jpeg"/>
+* <b>Output</b><br>
+<img src="https://github.com/monstahzxz/caMicroscope_demo/examples/output.jpeg"/>
