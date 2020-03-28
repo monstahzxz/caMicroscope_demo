@@ -6,6 +6,9 @@ Using a machine learning toolkit of your choice, create a tool which identifies 
 ## Solution
 I have set up a solution which takes in an input image and outputs <b>bounding boxes</b> of regions of interest. As suggested in my proposal, I have set up an object detector using <b>Yolo</b> to specifically extract patches corresponding to objects of interest. The Yolo model is able to detect about 80 classes in total. This solution is just to demonstrate the ability to easily crop out <b>regions of interest</b>. See sample input/output examples given below.
 
+## Architecture
+* Yolov2 (DarkNet)
+
 ## Tools and References Used
 * Tensorflow (Keras)
 * Matplotlib
@@ -14,6 +17,6 @@ I have set up a solution which takes in an input image and outputs <b>bounding b
 
 ## Example (Input/Output)
 * <b>Input</b>
-[Input 1](https://github.com/monstahzxz/caMicroscope_demo/examples/input1.jpg)
-* <b?Output</b>
-[Output 1](https://github.com/monstahzxz/caMicroscope_demo/examples/output1.jpg)
+<video src="https://github.com/monstahzxz/caMicroscope_demo/examples/demo_input.mp4"/>
+* <b>Output</b>
+<video src="https://github.com/monstahzxz/caMicroscope_demo/examples/demo_output.avi"/>
