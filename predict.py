@@ -1,5 +1,6 @@
 import os
 import sys
+import cv2
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import imshow
 import matplotlib.patches as patches
@@ -43,7 +44,7 @@ def yolo_non_max_suppression(scores, boxes, classes, max_boxes = 10, iou_thresho
 
 # Pipeline to filter boxes and nms
 
-def yolo_eval(yolo_outputs, image_shape = (648., 1152.), max_boxes=10, score_threshold=.6, iou_threshold=.5):
+def yolo_eval(yolo_outputs, image_shape = (480., 640.), max_boxes=10, score_threshold=.6, iou_threshold=.5):
     
     box_xy, box_wh, box_confidence, box_class_probs = yolo_outputs
     boxes = yolo_boxes_to_corners(box_xy, box_wh)
@@ -67,15 +68,18 @@ def predict(sess, image_file):
     
     return out_scores, out_boxes, out_classes
 
+
 if __name__ == '__main__':
 	file_name = sys.argv[1]
+	cv2.imwrite('input/{}'.format(file_name), cv2.resize(cv2.imread('input/{}'.format(file_name)), (640, 480)))
+
 	sess = K.get_session()
 
 	# Load yolo class names and anchors
 
 	class_names = read_classes("model_data/coco_classes.txt")
 	anchors = read_anchors("model_data/yolo_anchors.txt")
-	image_shape = (648., 1152.)
+	image_shape = (480., 640.)
 
 	# Loading pre-trained model
 
