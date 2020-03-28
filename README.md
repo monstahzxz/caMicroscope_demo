@@ -17,6 +17,6 @@ I have set up a solution which takes in an input image and outputs <b>bounding b
 
 ## Example (Input/Output)
 * <b>Input</b><br>
-<img src="https://github.com/monstahzxz/caMicroscope_demo/examples/input.jpeg"/>
+<img height="200" width="300" src="https://github.com/monstahzxz/caMicroscope_demo/blob/master/examples/input.jpeg"/>
 * <b>Output</b><br>
-<img src="https://github.com/monstahzxz/caMicroscope_demo/examples/output.jpeg"/>
+<img height="200" width="300" src="https://github.com/monstahzxz/caMicroscope_demo/blob/master/examples/output.jpeg"/>
