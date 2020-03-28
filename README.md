@@ -25,6 +25,7 @@ I have set up a solution which takes in an input image and outputs <b>bounding b
 * [OverFeat Paper](https://arxiv.org/abs/1312.6229)
 
 ## Example (Input/Output)
+This is a photo example. Please check out the <b>video example</b> given after this section.
 * <b>Input</b><br>
 <img height="200" width="300" src="https://github.com/monstahzxz/caMicroscope_demo/blob/master/examples/input.jpeg"/>
 * <b>Output</b><br>
