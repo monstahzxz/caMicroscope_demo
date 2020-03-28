@@ -4,7 +4,7 @@
 Using a machine learning toolkit of your choice, create a tool which identifies objects in the image, then returns positions in pixels corresponding to bounding boxes of a user-selected class of object in the image. For example, given an image with both cats and dogs, return bounding boxes for only cats.
 
 ## Solution
-I have set up a solution which takes in an input image and outputs <b>bounding boxes</b> of regions of interest.
+I have set up a solution which takes in an input image and outputs <b>bounding boxes</b> of regions of interest. As suggested in my proposal, I have set up an object detector using <b>Yolo</b> to specifically extract patches corresponding to objects of interest. The Yolo model is able to detect about 80 classes in total. This solution is just to demonstrate the ability to easily crop out <b>regions of interest</b>. See sample input/output examples given below.
 
 ## Tools and References Used
 * Tensorflow (Keras)
