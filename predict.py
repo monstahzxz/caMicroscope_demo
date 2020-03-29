@@ -12,6 +12,9 @@ from keras.models import load_model, Model
 from yolo_utils import read_classes, read_anchors, generate_colors, preprocess_image, scale_boxes
 from yad2k.models.keras_yolo import yolo_head, yolo_boxes_to_corners, preprocess_true_boxes, yolo_loss, yolo_body
 
+file_name = sys.argv[1]
+img_h, img_w, _ = list(map(float, cv2.imread('input/{}'.format(file_name)).shape))
+
 # Filter boxes having class scores > set threshold
 
 def yolo_filter_boxes(box_confidence, boxes, box_class_probs, threshold = .6):
@@ -44,7 +47,7 @@ def yolo_non_max_suppression(scores, boxes, classes, max_boxes = 10, iou_thresho
 
 # Pipeline to filter boxes and nms
 
-def yolo_eval(yolo_outputs, image_shape = (480., 640.), max_boxes=10, score_threshold=.6, iou_threshold=.5):
+def yolo_eval(yolo_outputs, image_shape = (img_h, img_w), max_boxes=10, score_threshold=.6, iou_threshold=.5):
     
     box_xy, box_wh, box_confidence, box_class_probs = yolo_outputs
     boxes = yolo_boxes_to_corners(box_xy, box_wh)
@@ -70,8 +73,8 @@ def predict(sess, image_file):
 
 
 if __name__ == '__main__':
-	file_name = sys.argv[1]
-	cv2.imwrite('input/{}'.format(file_name), cv2.resize(cv2.imread('input/{}'.format(file_name)), (640, 480)))
+	# file_name = sys.argv[1]
+	# cv2.imwrite('input/{}'.format(file_name), cv2.resize(cv2.imread('input/{}'.format(file_name)), (640, 480)))
 
 	sess = K.get_session()
 
@@ -79,7 +82,7 @@ if __name__ == '__main__':
 
 	class_names = read_classes("model_data/coco_classes.txt")
 	anchors = read_anchors("model_data/yolo_anchors.txt")
-	image_shape = (480., 640.)
+	image_shape = (img_h, img_w)
 
 	# Loading pre-trained model
 
